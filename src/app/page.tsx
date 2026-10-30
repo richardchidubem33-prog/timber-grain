@@ -38,7 +38,7 @@ export default function HomePage() {
           </div>
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
             <Image
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1000&q=80"
+              src="https://images.unsplash.com/photo-1590794056226-9dc76bdbf873?auto=format&fit=crop&w=1000&q=80"
               alt="Handcrafted wooden kitchenware"
               fill
               className="object-cover"
@@ -52,9 +52,9 @@ export default function HomePage() {
         <h2 className="font-serif text-2xl text-wood-900 mb-8">Shop by Category</h2>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {[
-            { name: "Cutting Boards", href: "/shop?category=cutting-boards", img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" },
-            { name: "Utensils", href: "/shop?category=utensils", img: "https://images.unsplash.com/photo-1585515320310-259814833e71?w=600&q=80" },
-            { name: "Bowls & Serving", href: "/shop?category=bowls", img: "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=600&q=80" },
+            { name: "Cutting Boards", href: "/shop?category=cutting-boards", img: "https://images.unsplash.com/photo-1590794056226-9dc76bdbf873?auto=format&fit=crop&w=600&q=80" },
+            { name: "Utensils", href: "/shop?category=utensils", img: "https://images.unsplash.com/photo-1585515320310-259814833e71?auto=format&fit=crop&w=600&q=80" },
+            { name: "Bowls & Serving", href: "/shop?category=bowls", img: "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=600&q=80" },
           ].map((cat) => (
             <Link key={cat.name} href={cat.href} className="group block">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-3">
