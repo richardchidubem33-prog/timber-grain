@@ -1,12 +1,12 @@
 import { products } from "@/data/products";
 import { ProductCard } from "@/components/ProductCard";
 
-export default function ShopPage({
+export default async function ShopPage({
   searchParams,
 }: {
-  searchParams: { category?: string };
+  searchParams: Promise<{ category?: string }>;
 }) {
-  const category = searchParams.category;
+  const { category } = await searchParams;
   const filtered = category
     ? products.filter((p) => p.category === category)
     : products;
