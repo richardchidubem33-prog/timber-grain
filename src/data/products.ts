@@ -28,6 +28,15 @@ export type Product = {
   featured?: boolean;
 };
 
+// Using reliable Unsplash photo IDs that actually show wooden kitchen items
+const woodBoard1 = "https://images.unsplash.com/photo-1590794056226-9dc76bdbf873?auto=format&fit=crop&w=800&q=80";
+const woodBoard2 = "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?auto=format&fit=crop&w=800&q=80";
+const woodUtensils1 = "https://images.unsplash.com/photo-1585515320310-259814833e71?auto=format&fit=crop&w=800&q=80";
+const woodUtensils2 = "https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=80";
+const woodBowl1 = "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?auto=format&fit=crop&w=800&q=80";
+const woodSpoon = "https://images.unsplash.com/photo-1556911220-bff31c28c2f1?auto=format&fit=crop&w=800&q=80";
+const woodBoard3 = "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80";
+
 export const products: Product[] = [
   {
     id: "1",
@@ -37,11 +46,7 @@ export const products: Product[] = [
     longDescription: "Handcrafted from sustainably sourced American black walnut. Each board is unique with rich, swirling grain patterns. Finished with food-safe mineral oil and beeswax.",
     category: "cutting-boards",
     basePrice: 89,
-    images: [
-      "https://images.unsplash.com/photo-1590794056226-9dc76bdbf873?w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
-    ],
+    images: [woodBoard1, woodBoard2, woodBoard3],
     variants: [
       { id: "1-s-natural", size: "Small (30×20cm)", color: "Natural", price: 89, stock: 12 },
       { id: "1-m-natural", size: "Medium (40×28cm)", color: "Natural", price: 129, stock: 8 },
@@ -60,11 +65,7 @@ export const products: Product[] = [
     longDescription: "Carved from Mediterranean olive wood. Each piece shows unique grain. Lightweight yet durable.",
     category: "utensils",
     basePrice: 65,
-    images: [
-      "https://images.unsplash.com/photo-1585515320310-259814833e71?w=800&q=80",
-      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&q=80",
-      "https://images.unsplash.com/photo-1556911220-bff31c28c2f1?w=800&q=80",
-    ],
+    images: [woodUtensils1, woodSpoon, woodUtensils2],
     variants: [
       { id: "2-std-natural", size: "Standard Set (3 pcs)", color: "Natural", price: 65, stock: 20 },
       { id: "2-lg-natural", size: "Large Set (5 pcs)", color: "Natural", price: 95, stock: 10 },
@@ -82,11 +83,7 @@ export const products: Product[] = [
     longDescription: "Turned from a single piece of teak. Smooth interior and exterior. Food-safe finish.",
     category: "bowls",
     basePrice: 110,
-    images: [
-      "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=800&q=80",
-      "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80",
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&q=80",
-    ],
+    images: [woodBowl1, woodBoard2, woodUtensils2],
     variants: [
       { id: "3-m-natural", size: "Medium (25cm)", color: "Natural", price: 110, stock: 7 },
       { id: "3-l-natural", size: "Large (32cm)", color: "Natural", price: 155, stock: 4 },
@@ -104,11 +101,7 @@ export const products: Product[] = [
     longDescription: "Light maple wood with subtle figure. Gently curved rims.",
     category: "plates",
     basePrice: 145,
-    images: [
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800&q=80",
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80",
-      "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=800&q=80",
-    ],
+    images: [woodBoard3, woodBowl1, woodBoard1],
     variants: [
       { id: "4-4pc-natural", size: "4-Piece Set", color: "Natural", price: 145, stock: 9 },
       { id: "4-6pc-natural", size: "6-Piece Set", color: "Natural", price: 210, stock: 5 },
@@ -125,11 +118,7 @@ export const products: Product[] = [
     longDescription: "European oak with a generous juice channel and integrated handle.",
     category: "cutting-boards",
     basePrice: 98,
-    images: [
-      "https://images.unsplash.com/photo-1590794056226-9dc76bdbf873?w=800&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-      "https://images.unsplash.com/photo-1556911220-bff31c28c2f1?w=800&q=80",
-    ],
+    images: [woodBoard1, woodBoard2, woodSpoon],
     variants: [
       { id: "5-std-natural", size: "Standard (45×18cm)", color: "Natural", price: 98, stock: 11 },
       { id: "5-xl-natural", size: "XL (60×22cm)", color: "Natural", price: 148, stock: 4 },
@@ -146,11 +135,7 @@ export const products: Product[] = [
     longDescription: "Strong and heat-resistant acacia wood spatulas. Smooth finish that is gentle on non-stick pans.",
     category: "utensils",
     basePrice: 48,
-    images: [
-      "https://images.unsplash.com/photo-1585515320310-259814833e71?w=800&q=80",
-      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&q=80",
-      "https://images.unsplash.com/photo-1556911220-bff31c28c2f1?w=800&q=80",
-    ],
+    images: [woodUtensils1, woodUtensils2, woodSpoon],
     variants: [
       { id: "6-std", size: "Standard Set (3 pcs)", color: "Natural", price: 48, stock: 18 },
       { id: "6-pro", size: "Pro Set (5 pcs)", color: "Natural", price: 72, stock: 9 },
@@ -168,11 +153,7 @@ export const products: Product[] = [
     longDescription: "Lightweight yet strong bamboo servers. Perfect for salads and serving.",
     category: "utensils",
     basePrice: 38,
-    images: [
-      "https://images.unsplash.com/photo-1585515320310-259814833e71?w=800&q=80",
-      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&q=80",
-      "https://images.unsplash.com/photo-1556911220-bff31c28c2f1?w=800&q=80",
-    ],
+    images: [woodSpoon, woodUtensils1, woodUtensils2],
     variants: [
       { id: "7-std", size: "Standard Pair", color: "Natural", price: 38, stock: 25 },
     ],
@@ -186,11 +167,7 @@ export const products: Product[] = [
     longDescription: "Dense cherry wood that develops a beautiful patina. Ideal for grinding spices and herbs.",
     category: "bowls",
     basePrice: 78,
-    images: [
-      "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=800&q=80",
-      "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80",
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&q=80",
-    ],
+    images: [woodBowl1, woodBoard2, woodUtensils2],
     variants: [
       { id: "8-std", size: "Standard", color: "Natural", price: 78, stock: 10 },
       { id: "8-large", size: "Large", color: "Natural", price: 98, stock: 6 },
@@ -207,11 +184,7 @@ export const products: Product[] = [
     longDescription: "Tapered French-style rolling pin made from a single piece of walnut. Perfect weight and balance.",
     category: "utensils",
     basePrice: 55,
-    images: [
-      "https://images.unsplash.com/photo-1585515320310-259814833e71?w=800&q=80",
-      "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&q=80",
-      "https://images.unsplash.com/photo-1556911220-bff31c28c2f1?w=800&q=80",
-    ],
+    images: [woodUtensils1, woodSpoon, woodUtensils2],
     variants: [
       { id: "9-std", size: "Standard (45cm)", color: "Natural", price: 55, stock: 14 },
     ],
@@ -225,11 +198,7 @@ export const products: Product[] = [
     longDescription: "Sturdy crock made from a mix of walnut, maple and oak. Keeps your favourite wooden utensils organised.",
     category: "bowls",
     basePrice: 68,
-    images: [
-      "https://images.unsplash.com/photo-1578500494198-246f612d3b3d?w=800&q=80",
-      "https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=800&q=80",
-      "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=800&q=80",
-    ],
+    images: [woodBowl1, woodUtensils1, woodBoard2],
     variants: [
       { id: "10-std", size: "Standard", color: "Natural Mix", price: 68, stock: 8 },
     ],
