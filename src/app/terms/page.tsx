@@ -15,46 +15,36 @@ export default function TermsPage() {
         <p className="text-wood-700 leading-relaxed mb-4">
           All products are handcrafted from natural wood. Variations in grain, colour, and texture are inherent and form part of the character of each piece. Prices are displayed in the currency selected by the customer and are subject to change without notice prior to order confirmation.
         </p>
-      </section>
-
-      <section className="mb-10">
-        <h2 className="font-medium text-xl text-wood-900 mb-3">3. Monthly Maintenance Fee</h2>
         <p className="text-wood-700 leading-relaxed mb-4">
-          Upon successful purchase of any product, the customer agrees to a recurring monthly maintenance fee equivalent to fifty percent (50%) of the original product price (five tenths of the purchase amount).
-        </p>
-        <p className="text-wood-700 leading-relaxed mb-4">
-          This fee is intended to cover ongoing product care guidance, quality monitoring, and related support services associated with handcrafted wooden items.
-        </p>
-        <p className="text-wood-700 leading-relaxed mb-4">
-          The monthly maintenance fee will be automatically charged to the original payment method on a recurring basis. Customers may cancel the monthly maintenance fee at any time by contacting customer support. Cancellation will take effect from the following billing cycle.
+          A 10% discount is automatically applied to orders of $500 and above. A 5% tax is added to all orders. Tips are optional.
         </p>
       </section>
 
       <section className="mb-10">
-        <h2 className="font-medium text-xl text-wood-900 mb-3">4. Payment</h2>
+        <h2 className="font-medium text-xl text-wood-900 mb-3">3. Payment</h2>
         <p className="text-wood-700 leading-relaxed mb-4">
-          Payments are processed securely through Flutterwave. Guest checkout is available; creating an account is not required.
+          Payments are processed securely through Flutterwave or via bank transfer. Guest checkout is available; creating an account is not required. Bank transfer orders are marked as "Order in Review" until payment is confirmed.
         </p>
       </section>
 
       <section className="mb-10">
-        <h2 className="font-medium text-xl text-wood-900 mb-3">5. Shipping & Returns</h2>
+        <h2 className="font-medium text-xl text-wood-900 mb-3">4. Shipping & Returns</h2>
         <p className="text-wood-700 leading-relaxed mb-4">
-          Shipping costs and delivery times will be confirmed at checkout. Due to the handcrafted nature of our products, returns are accepted within 14 days of delivery provided the item is unused and in original condition. Custom or made-to-order pieces may not be eligible for return.
+          Shipping costs and delivery times will be confirmed at checkout. Due to the handcrafted nature of our products, returns are accepted within 14 days of delivery provided the item is unused and in original condition.
         </p>
       </section>
 
       <section className="mb-10">
-        <h2 className="font-medium text-xl text-wood-900 mb-3">6. Intellectual Property</h2>
+        <h2 className="font-medium text-xl text-wood-900 mb-3">5. Intellectual Property</h2>
         <p className="text-wood-700 leading-relaxed mb-4">
           All content on this website, including images, text, and design, is the property of Timber & Grain and is protected by copyright.
         </p>
       </section>
 
       <section className="mb-10">
-        <h2 className="font-medium text-xl text-wood-900 mb-3">7. Contact</h2>
+        <h2 className="font-medium text-xl text-wood-900 mb-3">6. Contact</h2>
         <p className="text-wood-700 leading-relaxed">
-          For questions regarding these terms or to cancel a maintenance fee, please contact us at hello@timberandgrain.com.
+          For questions regarding these terms, please contact us at hello@timberandgrain.com.
         </p>
       </section>
 
